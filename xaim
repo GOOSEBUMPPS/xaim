@@ -117,13 +117,13 @@ local function GetClosestTarget()
 end
 
 UserInputService.InputBegan:Connect(function(Input)
-    if Input.UserInputType == Enum.UserInputType.MouseButton2 then
-       Holding = true
+    if Input.KeyCode == Enum.KeyCode.C then
+        Holding = true
     end
 end)
 
 UserInputService.InputEnded:Connect(function(Input)
-    if Input.UserInputType == Enum.UserInputType.MouseButton2 then
+    if Input.KeyCode == Enum.KeyCode.C then
         Holding = false
     end
 end)
